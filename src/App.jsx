@@ -8,13 +8,7 @@ import Spark from "./page/Spark";
 import Glossary from "./page/Glossary";
 
 const App = () => {
-  const {
-    activeMenu,
-    themeSettings,
-    setThemeSettings,
-    currentColor,
-    currentMode,
-  } = useStateContext();
+  const { activeMenu, currentMode } = useStateContext();
   return (
     <div className={currentMode === "Dark" ? "bg-black" : "bg-gray-200"}>
       <BrowserRouter>

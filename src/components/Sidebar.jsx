@@ -1,7 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
-// import { SiShopware } from "react-icons/si";
-// import { MdOutlineCancel } from "react-icons/md";
-// import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+import { NavLink } from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
 import { links } from "../data/data";
 import humburger from "../assets/Group 1000021834.png";

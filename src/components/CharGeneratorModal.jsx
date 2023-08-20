@@ -1,6 +1,5 @@
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import img1 from "../assets/Rectangle 34630550.png";
 import img2 from "../assets/Rectangle 34630551.png";

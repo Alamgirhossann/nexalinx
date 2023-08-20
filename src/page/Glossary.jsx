@@ -1,5 +1,4 @@
 import CharGeneratorModal from "../components/CharGeneratorModal";
-import HorizontaCard from "../components/horizontaCard";
 import woman from "../assets/Ellipse 70.png";
 import { Link } from "react-router-dom";
 import img1 from "../assets/Rectangle 34630550.png";
@@ -8,6 +7,7 @@ import img3 from "../assets/Rectangle 34630552.png";
 import img4 from "../assets/Rectangle 34630553.png";
 import img5 from "../assets/Rectangle 34630554.png";
 import img6 from "../assets/Rectangle 34630555.png";
+import HorizoltalCard from "../components/HorizoltalCard";
 
 const Glossary = () => {
   return (
@@ -39,7 +39,7 @@ const Glossary = () => {
           <p className=" px-2 mx-1 text-[10px]">Traits</p>
         </div>
         <div className="mx-4">
-          <HorizontaCard
+          <HorizoltalCard
             serial={1}
             name={"will kayer"}
             passion={"Magician"}
@@ -245,7 +245,7 @@ const Glossary = () => {
           </table>
         </div>
         <div className="mx-4 my-2">
-          <HorizontaCard
+          <HorizoltalCard
             serial={2}
             name={"will kayer"}
             passion={"Magician"}
@@ -255,7 +255,7 @@ const Glossary = () => {
           />
         </div>
         <div className="mx-4 my-2">
-          <HorizontaCard
+          <HorizoltalCard
             serial={3}
             name={"will kayer"}
             passion={"Magician"}
@@ -265,7 +265,7 @@ const Glossary = () => {
           />
         </div>
         <div className="mx-4 my-2">
-          <HorizontaCard
+          <HorizoltalCard
             serial={4}
             name={"will kayer"}
             passion={"Magician"}
@@ -275,7 +275,7 @@ const Glossary = () => {
           />
         </div>
         <div className="mx-4  my-2">
-          <HorizontaCard
+          <HorizoltalCard
             serial={5}
             name={"will kayer"}
             passion={"Magician"}
@@ -285,7 +285,7 @@ const Glossary = () => {
           />
         </div>
         <div className="mx-4 my-2">
-          <HorizontaCard
+          <HorizoltalCard
             serial={6}
             name={"will kayer"}
             passion={"Magician"}

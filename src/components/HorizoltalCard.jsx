@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import user from "../assets/Ellipse 68.png";
-const HorizontaCard = ({ serial, name, passion, percent, need, traits }) => {
+const HorizoltalCard = ({ serial, name, passion, percent, need, traits }) => {
   return (
     <div className=" bg-white">
       <div className="grid grid-cols-7 overflow-auto justify-center items-center py-4">
@@ -30,4 +31,4 @@ const HorizontaCard = ({ serial, name, passion, percent, need, traits }) => {
   );
 };
 
-export default HorizontaCard;
+export default HorizoltalCard;
