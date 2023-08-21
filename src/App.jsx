@@ -10,7 +10,7 @@ import Glossary from "./page/Glossary";
 const App = () => {
   const { activeMenu, currentMode } = useStateContext();
   return (
-    <div className={currentMode === "Dark" ? "bg-black" : "bg-gray-200"}>
+    <div className={currentMode === "Dark" ? "bg-black" : "bg-[#F8F8F8]"}>
       <BrowserRouter>
         <div className="flex relative dark:bg-main-dark-bg">
           {activeMenu ? (
@@ -42,10 +42,10 @@ const App = () => {
             }
           >
             <div
-              className={` fixed bg-green-500 md:static md:bg-gray-300 navbar w-full ${
+              className={`fixed md:static md:bg-white text-black navbar w-full ${
                 currentMode === "Dark"
                   ? "bg-black border-b-2 border-gray-900"
-                  : "bg-gray-300 border-b-2 border-gray-50"
+                  : "md:bg-white border-b-2 border-gray-50"
               }`}
             >
               <Navbar />

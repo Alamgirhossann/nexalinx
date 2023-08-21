@@ -9,28 +9,30 @@ const Sidebar = () => {
   const activeLink =
     "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-200 text-md m-2";
   const normalLink =
-    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-gray-200 m-2";
+    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-[rgba(255,255,255,0.18)] m-2";
   const handleCloseSidebar = () => {
     if (activeMenu && screenSize <= 900) {
       setActiveMenu(false);
     }
   };
   return (
-    <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
+    <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10 ">
       {activeMenu && (
         <div>
           <div className="flex justify-end items-center">
             <button
               onClick={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}
               type="button"
-              className={` text-xl rounded-full p-3 mt-4 hidden md:block  text-white ${
-                currentMode === "Dark" ? "text-white hover:bg-gray-500" : ""
+              className={` text-xl rounded-full p-3 mt-1 text-white ${
+                currentMode === "Dark"
+                  ? "text-white hover:bg-[rgba(255,255,255,0.18)]"
+                  : ""
               }`}
             >
               <img src={humburger} alt="" className="w-8 h-5" />
             </button>
           </div>
-          <div className="mt-10">
+          <div className="mt-12">
             {links.map((link) => (
               <NavLink
                 to={`/${link.name}`}

@@ -1,0 +1,51 @@
+.sidebar {
+    box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;
+}
+
+.nav-item,
+.navbar {
+    z-index: 10000;
+}
+
+.button-div {
+    display: flex;
+}
+
+.generate-card {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .sidebar {
+        z-index: 10000000;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navbar {
+        background: linear-gradient(180deg, #03B888 0%, #2A8FA5 100%);
+    }
+
+    .button-div {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.e-dlg-center-center,
+.e-quick-popup-wrapper.e-device {
+    z-index: 1000000 !important;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 216, 216);
+    border-radius: 40px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}

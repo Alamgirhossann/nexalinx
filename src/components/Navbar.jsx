@@ -16,7 +16,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    if (screenSize <= 900) {
+    if (screenSize <= 767) {
       setActiveMenu(false);
     } else {
       setActiveMenu(true);
@@ -29,9 +29,11 @@ const Navbar = () => {
     <div className="flex justify-between p-3 md:ml-6 md: ms-5 relative">
       <button
         onClick={handleActiveMenu}
-        className={`${activeMenu ? "md:hidden" : ""}`}
+        className={`${
+          activeMenu ? "md:hidden" : ""
+        } md:bg-slate-700 p-2 rounded-full`}
       >
-        <img src={humburger} alt="" className="w-8 h-5" />
+        <img src={humburger} alt="" className="w-6 h-4" />
       </button>
       <h2 className="hidden md:block">Dashboard</h2>
     </div>

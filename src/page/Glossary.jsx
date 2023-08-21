@@ -12,27 +12,23 @@ import HorizoltalCard from "../components/HorizoltalCard";
 const Glossary = () => {
   return (
     <div>
-      {
-        <div className="sm:hidden md:block">
-          <CharGeneratorModal />
-        </div>
-      }
-
+      <div className="hidden">
+        <CharGeneratorModal />
+      </div>
       <div className="sm: block md:hidden ">
-        <div className="flex justify-between mt-12 md:mt-8">
+        <div className="flex justify-between mt-14 mx-4 md:mt-8">
           <h1 className=" text-xl font-bold">Character</h1>
           <div>
-            <button className="bg-[#F5F5F5] py-1 px-2 mx-1 text-[13px]">
+            <button className="bg-[#E4E4E4] py-1 px-2 mx-1 text-[10px]">
               ADD NEW
             </button>
-            <button className="bg-[#F5F5F5] py-1 px-2 mx-1 text-[13px]">
+            <button className="bg-[#E4E4E4] py-1 px-2 mx-1 text-[10px]">
               AUTO GENERATE
             </button>
           </div>
         </div>
         <div className="flex justify-between mt-8 md:mt-4 mx-5">
           <p className="px-2 mx-1 text-[10px]">name</p>
-
           <p className=" px-2 mx-1 text-[10px]">Archetype</p>
           <p className=" px-2 mx-1 text-[10px]">Possesion</p>
           <p className=" px-2 mx-1 text-[10px]">Need</p>
@@ -46,6 +42,7 @@ const Glossary = () => {
             percent={"59%"}
             need={"To help"}
             traits={"Witty,fickle"}
+            color={"#38AA3A"}
           />
         </div>
 
@@ -172,8 +169,8 @@ const Glossary = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 mt-5  mx-4 bg-white">
-          <div className="border border-slate-500">
+        <div className="grid grid-cols-2 mt-5  mx-4 bg-white text-[10px]">
+          <div className="border border-slate-500 p-2">
             <h3>Obstacle</h3>
             <p>
               This is a obstacle sectiom.They can simply click in his bpx and
@@ -181,7 +178,7 @@ const Glossary = () => {
               end of this box.
             </p>
           </div>
-          <div className="border border-slate-500">
+          <div className="border border-slate-500 p-2">
             <h3>Resolving Obstacle</h3>
             <p>
               This is a obstacle sectiom.They can simply click in his bpx and
@@ -190,7 +187,7 @@ const Glossary = () => {
             </p>
           </div>
         </div>
-        <div className="border border-slate-500 mx-4 bg-white ">
+        <div className="border border-slate-500 mx-4 bg-white p-2 text-[10px]">
           <h3>Resolving Obstacle</h3>
           <p>
             This is a obstacle sectiom.They can simply click in his bpx and type
@@ -202,44 +199,55 @@ const Glossary = () => {
         <div className="bg-white mx-4 mt-3 py-3 border border-slate-500">
           <h3 className=" text-center">Character Scenes</h3>
 
-          <table className="table-auto ">
+          <table className="table-fixed w-full text-[9px]">
             <thead>
-              <tr>
-                <th>Order</th>
-                <th>Scene Heading</th>
-                <th>Page</th>
+              <tr className="">
+                <th className=" w-[10%]">Order</th>
+                <th className=" w-[15%]"></th>
+                <th className=" w-[60%]">Scene Heading</th>
+                <th className=" w-[15%]">Page</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>1</td>
-                <td>EXT . JOHN AND MARY’ S HOUSE - NIGHT </td>
-                <td>4</td>
+                <td className="text-center">1</td>
+                <td className="text-center"></td>
+                <td className="">EXT . JOHN AND MARY’ S HOUSE - NIGHT </td>
+                <td className="text-center">4</td>
               </tr>
               <tr>
-                <td>2</td>
+                <td className="text-center">2</td>
+                <td className="text-center"></td>
+
                 <td>INT . TRAIN STATION - NIGHT</td>
-                <td>8</td>
+                <td className="text-center">8</td>
               </tr>
               <tr>
-                <td>3</td>
+                <td className="text-center">3</td>
+                <td className="text-center"></td>
+
                 <td>EXT . STREET - MORNING</td>
-                <td>7</td>
+                <td className="text-center">7</td>
               </tr>
               <tr>
-                <td>4</td>
+                <td className="text-center">4</td>
+                <td className="text-center"></td>
+
                 <td>INT . JAKEIES HOUSE - AFTERNOON</td>
-                <td>3</td>
+                <td className="text-center">3</td>
               </tr>
               <tr>
-                <td>5</td>
+                <td className="text-center">5</td>
+                <td className="text-center"></td>
+
                 <td>EXT . JAKEIES HOUSE - LATER</td>
-                <td>2</td>
+                <td className="text-center">2</td>
               </tr>
               <tr>
-                <td>6</td>
+                <td className="text-center">6</td>
+                <td className="text-center"></td>
                 <td>INT . THE JOB CRNTER - MORNING</td>
-                <td>1</td>
+                <td className="text-center">1</td>
               </tr>
             </tbody>
           </table>
@@ -252,6 +260,7 @@ const Glossary = () => {
             percent={"59%"}
             need={"To help"}
             traits={"Witty,fickle"}
+            color={"#D4A941"}
           />
         </div>
         <div className="mx-4 my-2">
@@ -262,6 +271,7 @@ const Glossary = () => {
             percent={"59%"}
             need={"To help"}
             traits={"Witty,fickle"}
+            color={"#A95B38"}
           />
         </div>
         <div className="mx-4 my-2">
@@ -272,6 +282,7 @@ const Glossary = () => {
             percent={"59%"}
             need={"To help"}
             traits={"Witty,fickle"}
+            color={"#C7D651"}
           />
         </div>
         <div className="mx-4  my-2">
@@ -282,6 +293,7 @@ const Glossary = () => {
             percent={"59%"}
             need={"To help"}
             traits={"Witty,fickle"}
+            color={"#77A737"}
           />
         </div>
         <div className="mx-4 my-2">
@@ -291,6 +303,7 @@ const Glossary = () => {
             passion={"Magician"}
             percent={"59%"}
             need={"To help"}
+            color={"#77A737"}
             traits={"Witty,fickle"}
           />
         </div>
