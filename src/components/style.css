@@ -54,3 +54,21 @@
 .carousel-item.active {
     opacity: 1;
 }
+
+.bottom-color {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.bottom-color::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    /* Set the width to 50% to cover the bottom half */
+    border-bottom: 2px solid red;
+    /* Adjust the color and thickness as needed */
+}

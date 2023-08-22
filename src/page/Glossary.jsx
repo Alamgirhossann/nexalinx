@@ -43,6 +43,7 @@ const Glossary = () => {
             need={"To help"}
             traits={"Witty,fickle"}
             color={"#38AA3A"}
+            width={"100%"}
           />
         </div>
 
@@ -50,7 +51,7 @@ const Glossary = () => {
           <div className="flex justify-center">
             <img src={woman} alt="" className="w-24  h-24" />
           </div>
-          <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-center">
+          <div className="mt-3 text-center mx-4 sm:mx-4 sm:mt-0 sm:text-center">
             <h1 className="text-base font-semibold leading-6 text-gray-900">
               Ai Character Generator
             </h1>
@@ -261,6 +262,7 @@ const Glossary = () => {
             need={"To help"}
             traits={"Witty,fickle"}
             color={"#D4A941"}
+            width={"45%"}
           />
         </div>
         <div className="mx-4 my-2">
@@ -272,6 +274,7 @@ const Glossary = () => {
             need={"To help"}
             traits={"Witty,fickle"}
             color={"#A95B38"}
+            width={"55%"}
           />
         </div>
         <div className="mx-4 my-2">
@@ -283,6 +286,7 @@ const Glossary = () => {
             need={"To help"}
             traits={"Witty,fickle"}
             color={"#C7D651"}
+            width={"70%"}
           />
         </div>
         <div className="mx-4  my-2">
@@ -294,6 +298,7 @@ const Glossary = () => {
             need={"To help"}
             traits={"Witty,fickle"}
             color={"#77A737"}
+            width={"85%"}
           />
         </div>
         <div className="mx-4 my-2">
@@ -305,6 +310,7 @@ const Glossary = () => {
             need={"To help"}
             color={"#77A737"}
             traits={"Witty,fickle"}
+            width={"85%"}
           />
         </div>
       </div>

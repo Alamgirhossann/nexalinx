@@ -8,9 +8,14 @@ const HorizoltalCard = ({
   need,
   traits,
   color,
+  width,
 }) => {
   return (
-    <div className={`bg-white`} style={{ borderBottom: `2px solid ${color}` }}>
+    <div className={`bg-white w-full inline-block relative`}>
+      <div
+        className="absolute bottom-0 left-0  border-b-2"
+        style={{ width: width, borderColor: color }}
+      ></div>
       <div className="grid grid-cols-7 justify-center items-center py-3 px-1">
         <div className="w-auto  text-[10px]">
           <p className="">{serial}</p>
