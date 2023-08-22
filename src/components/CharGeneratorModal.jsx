@@ -7,6 +7,7 @@ import img3 from "../assets/Rectangle 34630552.png";
 import img4 from "../assets/Rectangle 34630553.png";
 import img5 from "../assets/Rectangle 34630554.png";
 import img6 from "../assets/Rectangle 34630555.png";
+import description from "../assets/description.png";
 
 const CharGeneratorModal = () => {
   const [open, setOpen] = useState(true);
@@ -62,9 +63,13 @@ const CharGeneratorModal = () => {
                                 <div className="col-span-full">
                                   <label
                                     htmlFor="street-address"
-                                    className="block text-sm font-medium leading-6 text-gray-900 text-left"
+                                    className="block text-sm  leading-6 text-gray-900 text-left"
                                   >
-                                    Description
+                                    <img
+                                      src={description}
+                                      alt=""
+                                      className="w-[100px]"
+                                    />
                                   </label>
                                   <div className="mt-2">
                                     <input
@@ -73,7 +78,9 @@ const CharGeneratorModal = () => {
                                       id="street-address"
                                       autoComplete="street-address"
                                       placeholder="Black haired male, Green eyes with scar on chin."
-                                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 placeholder:ps-2"
+                                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 
+                                  bg-[#F6F6F6]
+                                  focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 placeholder:ps-2"
                                     />
                                   </div>
                                 </div>
@@ -81,7 +88,7 @@ const CharGeneratorModal = () => {
                                 <div className="sm:col-span-2 sm:col-start-1">
                                   <label
                                     htmlFor="city"
-                                    className="block text-sm font-medium leading-6 text-gray-900 text-left"
+                                    className="block text-sm font-semibold leading-6 text-gray-900 text-left"
                                   >
                                     Anti-Description (optional)
                                   </label>
@@ -92,7 +99,9 @@ const CharGeneratorModal = () => {
                                       id="city"
                                       autoComplete="address-level2"
                                       placeholder="Black haired male"
-                                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 placeholder:ps-2"
+                                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400
+                                  bg-[#F6F6F6]
+                                  focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 placeholder:ps-2"
                                     />
                                   </div>
                                 </div>
@@ -100,7 +109,7 @@ const CharGeneratorModal = () => {
                                 <div className="sm:col-span-2">
                                   <label
                                     htmlFor="region"
-                                    className="block text-sm font-medium leading-6 text-gray-900 text-left"
+                                    className="block text-sm font-semibold leading-6 text-gray-900 text-left"
                                   >
                                     Art Style
                                   </label>
@@ -111,7 +120,9 @@ const CharGeneratorModal = () => {
                                       id="region"
                                       autoComplete="address-level1"
                                       placeholder="No Style"
-                                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 placeholder:ps-2"
+                                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 
+                                  bg-[#F6F6F6]
+                                  focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 placeholder:ps-2"
                                     />
                                   </div>
                                 </div>
@@ -119,7 +130,7 @@ const CharGeneratorModal = () => {
                                 <div className="sm:col-span-2">
                                   <label
                                     htmlFor="postal-code"
-                                    className="block text-sm font-medium leading-6 text-gray-900 text-left"
+                                    className="block text-sm font-semibold leading-6 text-gray-900 text-left"
                                   >
                                     Shape
                                   </label>
@@ -130,7 +141,9 @@ const CharGeneratorModal = () => {
                                       id="postal-code"
                                       autoComplete="postal-code"
                                       placeholder="Protrait"
-                                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 placeholder:ps-2"
+                                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 
+                                  bg-[#F6F6F6]
+                                  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 placeholder:ps-2"
                                     />
                                   </div>
                                 </div>

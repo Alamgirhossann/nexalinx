@@ -1,7 +1,6 @@
 import CardWithBorder from "../components/CardWithBorder";
 import CustomCarousel from "../components/Carousel";
-import Carousel from "../components/Carousel";
-import CarouselCom from "../components/Carousel";
+import lock from "../assets/Vector.png";
 
 const Spark = () => {
   return (
@@ -89,19 +88,31 @@ const Spark = () => {
           <h5 style={{ fontSize: "15px" }}>PROTAGONIST</h5>
           <div>
             <p className="text-[#000] text-[15px] md:text-[28px] opacity-[0.5] font-bold inline-block">
-              A sheriff,
+              A sheriff{" "}
+              <span className="inline-block pb-4">
+                <img src={lock} alt="" className="w-2 h-2" />
+              </span>
+              ,
             </p>{" "}
             <p className=" text-[#8A8A8A] text-[15px] md:text-[28px] opacity-[0.5] font-bold inline-block">
               who has a strong moral{" "}
             </p>
             <p className="text-[#000] text-[15px] md:text-[28px] opacity-[0.5] font-bold inline-block ms-1">
               {" "}
-              compass.
+              compass.{" "}
+              <span className="inline-block pb-4">
+                <img src={lock} alt="" className="w-2 h-2" />
+              </span>
             </p>
           </div>
         </div>
         <div className="mt-2">
-          <h5 style={{ fontSize: "15px" }}>SECONDARY CHARACTER</h5>
+          <h5 style={{ fontSize: "15px" }}>
+            SECONDARY CHARACTER{" "}
+            <span className="inline-block ps-10 opacity-[0.5]">
+              <img src={lock} alt="" className="w-2 h-2" />
+            </span>
+          </h5>
           <p className="text-[#000] text-[15px] md:text-[28px] opacity-[0.5] font-bold inline-block">
             A high
           </p>{" "}

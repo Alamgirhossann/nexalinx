@@ -7,16 +7,16 @@ const Sidebar = () => {
   const { activeMenu, setActiveMenu, screenSize, currentColor, currentMode } =
     useStateContext();
   const activeLink =
-    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-200 text-md m-2";
+    "flex items-center gap-5 ps-4 pt-3 pb-2.5 border-l-4 border-gray-100 text-gray-200 text-md ";
   const normalLink =
-    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-[rgba(255,255,255,0.18)] m-2";
+    "flex items-center gap-5 ps-4 pt-3 pb-2.5 hover:border-l-4 border-gray-100 text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-[rgba(255,255,255,0.18)]";
   const handleCloseSidebar = () => {
     if (activeMenu && screenSize <= 900) {
       setActiveMenu(false);
     }
   };
   return (
-    <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10 ">
+    <div className=" h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10 ">
       {activeMenu && (
         <div>
           <div className="flex justify-end items-center">
